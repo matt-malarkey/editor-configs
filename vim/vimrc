@@ -1,5 +1,5 @@
 filetype on
-syntax on 
+syntax on
 colorscheme Tomorrow-Night
 
 set colorcolumn=80
