@@ -13,5 +13,8 @@ set expandtab
 set smartindent
 set autoindent
 
+filetype plugin on
+let spec_chglog_format = "%a %b %d %Y Firstname Lastname <flastname@open-systems.com>"
+
 set nomodeline
 set modelines=0
