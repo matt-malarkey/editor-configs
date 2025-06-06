@@ -2,4 +2,4 @@
 
 uid=
 arg=$(echo $1 | sed 's/ /%20/g')
-curl -s -o /dev/null "https://maker.ifttt.com/trigger/notify/with/key/$uid?value1=$arg"
+curl -x proxy.open.ch:8080 -s -o /dev/null "https://maker.ifttt.com/trigger/notify/with/key/$uid?value1=$arg"

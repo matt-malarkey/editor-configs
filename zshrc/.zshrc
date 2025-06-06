@@ -113,7 +113,7 @@ source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 alias koff="kubeoff"
 alias kon="kubeon"
 export KUBECTX_CURRENT_FGCOLOR=$(tput setaf 6)
-source "$PANTA/osse/scripts/okx.sh"
+source "$PANTA/seccloud/websec/tools/okx/okx.sh"
 
 export PROXY=proxy.open.ch:8080
 export http_proxy="http://$PROXY"
