@@ -1,0 +1,36 @@
+[includeIf "gitdir:~/dev/"]
+path = ~/dev/.gitconfig-personal
+
+[includeIf "gitdir:~/code/"]
+path = ~/code/.gitconfig-work
+
+[credential]
+helper = osxkeychain
+
+[http]
+proxy = http://proxy.open.ch:8080/
+
+[color]
+ui = auto
+
+[core]
+editor = vim
+pager = less -F -X
+excludesfile = ~/.gitignore
+autocrlf = input
+
+[merge]
+ff = true
+commit = false
+
+[branch]
+autosetuprebase = always
+
+[push]
+default = simple
+
+[pull]
+rebase = true
+
+[maintenance]
+repo = ~/code/panta

@@ -42,7 +42,6 @@ alias grep='grep --color'
 
 # Git aliases
 alias gco="git checkout"
-alias gp="git pull"
 alias pull="git pull"
 alias push="git push"
 alias stash="git stash"
@@ -50,7 +49,6 @@ alias pop="git stash pop"
 alias pr="gh pr create -d"
 alias prr="gh pr create --fill"
 alias prd="gh pr create -d --fill"
-alias gr="git rebase -i"
 gri() { git rebase -i HEAD~"$@"; }
 alias fixup="git rebase -i HEAD~2"
 alias grc="git rebase --continue"
@@ -132,8 +130,6 @@ export PULLER_TIMEOUT=7200
 
 export REQUESTS_CA_BUNDLE="$(find $HOMEBREW_CELLAR/azure-cli -name cacert.pem | grep -v pip)"
 curl -s --noproxy '*' http://proxy-ca.open.ch:8081/proxyca.crt >> "$REQUESTS_CA_BUNDLE"
-
-git config --global http.proxy http://proxy.open.ch:8080/
 
 export PULLER_TIMEOUT=7200
 

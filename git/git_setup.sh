@@ -1,24 +1,12 @@
-#!/bin/dash
+#!/usr/bin/env bash
 
-# Following https://docs.open.ch/docs/display/DEV/Git+and+Stash+User+Guide
+ln -fs $(pwd)/.gitconfig ~/.gitconfig
 
-git config --global user.name 'Matt Malarkey'
-git config --global user.email 'mmalarkey@open-systems.com'
+mkdir -p ~/dev
+ln -fs $(pwd)/.gitconfig-personal ~/dev/.gitconfig-personal
 
-# Optional
-git config --global color.ui auto
-git config --global core.editor 'vim'
-git config --global core.pager 'less -F -X'
-git config --global url.ssh://git@stash.open.ch:7999/.insteadOf https://stash.open.ch/scm/
-# git config --global alias.st status
-
-# Git primer config
-git config --global merge.ff false 
-git config --global merge.commit false
-git config --global branch.autosetuprebase always
-git config --global push.default simple
-
-git config --global pull.rebase true
+mkdir -p ~/code
+ln -fs $(pwd)/.gitconfig-work ~/code/.gitconfig-work
 
 # Github setup
 if command -v gh &>/dev/null; then

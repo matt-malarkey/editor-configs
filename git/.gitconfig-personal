@@ -1,0 +1,9 @@
+[user]
+name = Matt Malarkey
+email = mmalarkey@open-systems.com
+
+[github]
+user = "matt-malarkey"
+
+[core]
+sshCommand = "ssh -i ~/.ssh/id_rsa_personal"
