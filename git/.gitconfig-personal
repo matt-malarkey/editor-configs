@@ -6,4 +6,4 @@ email = mmalarkey@open-systems.com
 user = "matt-malarkey"
 
 [core]
-sshCommand = "ssh -i ~/.ssh/id_rsa_personal"
+sshCommand = "ssh -i ~/.ssh/id_rsa"
