@@ -7,6 +7,9 @@ path = ~/code/.gitconfig-work
 [credential]
 helper = osxkeychain
 
+[url "ssh://git@github.com/"]
+insteadof = https://github.com/
+
 [http]
 proxy = http://proxy.open.ch:8080/
 
